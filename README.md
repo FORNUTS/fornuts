@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-FORNUTS (FORest NUTrient Simulator)
-==================================
-
-Simulates the carbon and nitrogen cycles in a forest ecology.
-=======
-fornuts
+FORNUTS
 =======
 ## About
 This is a project for our CS 472 class Senior Capstone II, Spring 2013. 
@@ -14,4 +8,3 @@ Simulates the carbon and nitrogen cycles in a forest ecology.
 
 ## Goal
 Our goal is to take the old FORTRAN FORNUTS program and re-create the software so that it can run on more modern systems. We will also create a easy to use GUI with some statistical graphs based off the data for the client.
->>>>>>> 5fd66308fdafa1b6abaa0bc60820770af45d2984

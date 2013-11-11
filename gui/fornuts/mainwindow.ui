@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>512</width>
+    <height>363</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>533</width>
+    <height>363</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>/fonts/DroidSans.ttf</family>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>FORNUTS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/images/fornuts.jpg</normaloff>:/images/images/fornuts.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+font-size: 11px;
+qproperty-alignment:AlignRight;
+}
+
+QGroupBox {
+font-size: 11px;
+}
+
+QLabel {
+font-size: 11px;
+}
+
+QRadioButton {
+font-size: 11px;
+}
+
+QDoubleSpinBox {
+font-size: 11px;
+}
+
+QSpinBox {
+font-size: 11px;
+}
+
+QTabWidget {
+font-size: 11px;
+}
+
+QCheckBox {
+font-size: 11px;
+}
+
+QPushButton {
+font-size: 11px;
+}</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="Fertalization">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Fertilization</string>
+    </property>
+    <widget class="QLabel" name="FertalizationAge">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Age</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="FERAGE">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>44</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>50</number>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="FertalizationRate">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>111</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Rate</string>
+     </property>
+     <widget class="QRadioButton" name="FERATE_0">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="FERATE_100">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="FERATE_200">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>41</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>200</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="FERATE_300">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>41</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>300</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="nitrogenReabsorbed">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Percent Nitrogen Reabsorbed</string>
+    </property>
+    <widget class="QLabel" name="nitrogenReabsorbedFromFoliage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>22</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>From Foliage</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nitrogenReabsorbedFromFineRoots">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>From Fine Roots</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="LTRANS">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <double>40.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="RTRANS">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <double>40.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="RootShootRatio">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="TotalSoil">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Total Soil</string>
+    </property>
+    <widget class="QLabel" name="TotalSoilCarbonPool">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Carbon Pool</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TotalSoilNitrogenPool">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>18</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nitrogen Pool</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="SOILC">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>15000</number>
+     </property>
+     <property name="maximum">
+      <number>35000</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="ISOILN">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1500</number>
+     </property>
+     <property name="maximum">
+      <number>5000</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="InitialAge">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="SiteIndex">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Site Index</string>
+    </property>
+    <widget class="QRadioButton" name="SI_45">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>22</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>45</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="SI_55">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>22</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>55</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="SI_65">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>44</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>65</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="SI_75">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>44</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>75</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="HarvestMethod">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Harvest Method</string>
+    </property>
+    <widget class="QRadioButton" name="HARVT_WHOLE">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>22</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Whole Tree</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="HARVT_STEM">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>44</y>
+       <width>82</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stems Only</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Rotation">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Rotation</string>
+    </property>
+    <widget class="QLabel" name="RotationLength">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Length</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="ROTATN">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>20</number>
+     </property>
+     <property name="maximum">
+      <number>75</number>
+     </property>
+     <property name="value">
+      <number>20</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="NUM">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>5</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RotationNumber">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="PerscribedBurn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>261</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Prescribed Burn</string>
+    </property>
+    <widget class="QLabel" name="PerscribedBurnAge">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Age</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="PBBURN">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>10</number>
+     </property>
+     <property name="maximum">
+      <number>50</number>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="PerscribedBurnTemperature">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>131</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Temperature</string>
+     </property>
+     <widget class="QRadioButton" name="BURNTP_NONE">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>None</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="BURNTP_WARM">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Warm</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="BURNTP_HOT">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hot</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QCheckBox" name="PBBURN_NONE">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PerscribedBurnFrequency">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Frequency</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="FREQBN">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>4</number>
+     </property>
+     <property name="maximum">
+      <number>20</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="BroadcastBurn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>261</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Broadcast Burn</string>
+    </property>
+    <widget class="QGroupBox" name="BroadcastBurnTemperature">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>131</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Temperature</string>
+     </property>
+     <widget class="QRadioButton" name="SBURNT_NONE">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>None</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="SBURNT_WARM">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Warm</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="SBURNT_HOT">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hot</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="BroadcastBurnAfterHarvest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>After Harvest</string>
+     </property>
+     <widget class="QRadioButton" name="SHBURN_YES">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>24</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Yes</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="SHBURN_NO">
+      <property name="geometry">
+       <rect>
+        <x>59</x>
+        <y>24</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="PercentNitrogen">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>260</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Percent Nitrogen</string>
+    </property>
+    <widget class="QLabel" name="PercentNitrogenLeaves">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Leaves</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PercentNitrogenRoots">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Roots</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="LEAFNF">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.800000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>2.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="ROOTNF">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.500000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.200000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="AnnualNitrogen">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>260</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Annual Nitrogen</string>
+    </property>
+    <widget class="QLabel" name="AnnualNitrogenOutput">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>22</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AnnualNitrogenInput">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Input</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="NOUTPUT">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>5</number>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="NINPUT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <number>20</number>
+     </property>
+     <property name="value">
+      <number>3</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>100</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Root/Shoot Ratio %</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="FRFPRO">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>23</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="decimals">
+      <number>1</number>
+     </property>
+     <property name="minimum">
+      <double>50.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>200.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Initial Age</string>
+    </property>
+    <widget class="QSpinBox" name="AGE">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>23</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>50</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>512</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFILE">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Input_File"/>
+    <addaction name="actionSave_Input_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Output_File"/>
+    <addaction name="actionSave_Graphs"/>
+    <addaction name="actionSave_CSV_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionExample_1"/>
+    <addaction name="actionExample_2"/>
+    <addaction name="actionExample_3"/>
+   </widget>
+   <addaction name="menuFILE"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>533</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>533</width>
+     <height>375</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionOpen_Input_File">
+   <property name="text">
+    <string>Open Input File...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionExample_1">
+   <property name="text">
+    <string>Example 1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionExample_2">
+   <property name="text">
+    <string>Example 2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionExample_3">
+   <property name="text">
+    <string>Example 3</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionSave_Input_File">
+   <property name="text">
+    <string>Save Input File...</string>
+   </property>
+  </action>
+  <action name="actionSave_Output_File">
+   <property name="text">
+    <string>Save Output File...</string>
+   </property>
+  </action>
+  <action name="actionSave_Graphs">
+   <property name="text">
+    <string>Save Graphs...</string>
+   </property>
+  </action>
+  <action name="actionSave_CSV_File">
+   <property name="text">
+    <string>Save Graphs to CSV File...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>AGE</tabstop>
+  <tabstop>SI_45</tabstop>
+  <tabstop>SI_55</tabstop>
+  <tabstop>SI_65</tabstop>
+  <tabstop>SI_75</tabstop>
+  <tabstop>ROTATN</tabstop>
+  <tabstop>NUM</tabstop>
+  <tabstop>FERAGE</tabstop>
+  <tabstop>FERATE_0</tabstop>
+  <tabstop>FERATE_100</tabstop>
+  <tabstop>FERATE_200</tabstop>
+  <tabstop>FERATE_300</tabstop>
+  <tabstop>PBBURN_NONE</tabstop>
+  <tabstop>PBBURN</tabstop>
+  <tabstop>FREQBN</tabstop>
+  <tabstop>BURNTP_NONE</tabstop>
+  <tabstop>BURNTP_WARM</tabstop>
+  <tabstop>BURNTP_HOT</tabstop>
+  <tabstop>HARVT_WHOLE</tabstop>
+  <tabstop>HARVT_STEM</tabstop>
+  <tabstop>SHBURN_YES</tabstop>
+  <tabstop>SHBURN_NO</tabstop>
+  <tabstop>SBURNT_NONE</tabstop>
+  <tabstop>SBURNT_WARM</tabstop>
+  <tabstop>SBURNT_HOT</tabstop>
+  <tabstop>LTRANS</tabstop>
+  <tabstop>RTRANS</tabstop>
+  <tabstop>FRFPRO</tabstop>
+  <tabstop>SOILC</tabstop>
+  <tabstop>ISOILN</tabstop>
+  <tabstop>LEAFNF</tabstop>
+  <tabstop>ROOTNF</tabstop>
+  <tabstop>NINPUT</tabstop>
+  <tabstop>NOUTPUT</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpen_Input_File</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openInputFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExample_1</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openExample1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExample_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openExample2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExample_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openExample3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>about()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AGE</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>9</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SI_45</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SI_65</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SI_55</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SI_75</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ROTATN</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NUM</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FERAGE</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FERATE_0</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>425</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FERATE_100</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>474</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FERATE_300</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>463</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FERATE_200</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBBURN_NONE</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBBURN</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>158</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FREQBN</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BURNTP_NONE</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BURNTP_WARM</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BURNTP_HOT</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HARVT_WHOLE</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HarvestMethod</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FRFPRO</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SHBURN_YES</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SHBURN_NO</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SBURNT_NONE</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SBURNT_WARM</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SBURNT_HOT</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LTRANS</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RTRANS</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SOILC</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ISOILN</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEAFNF</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ROOTNF</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>301</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NINPUT</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NOUTPUT</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_Graphs</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveGraphFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_Input_File</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveInputFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_Output_File</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveOutputFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_CSV_File</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveCSV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>runSimulation()</slot>
+  <slot>saveInputFile()</slot>
+  <slot>saveOutputFile()</slot>
+  <slot>openInputFile()</slot>
+  <slot>openExample1()</slot>
+  <slot>openExample2()</slot>
+  <slot>openExample3()</slot>
+  <slot>saveGraphFile()</slot>
+  <slot>about()</slot>
+  <slot>saveCSV()</slot>
+ </slots>
+</ui>

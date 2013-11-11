@@ -1,0 +1,18 @@
+#summary Credit Page
+#labels Credits
+
+= Credits =
+
+== FORNUTS ==
+
+Original FORNUTS program:
+  * Stephen C. Hart Fall 1983
+  * John M. Pye Winter 1985
+
+Current FORNUTS program:
+  * Karl Ott
+  * Matt Van Veldhuizen
+  * Syler Clayton
+
+== Logo ==
+  * Azara Mohammadi

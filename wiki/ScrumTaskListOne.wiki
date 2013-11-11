@@ -1,0 +1,11 @@
+#summary Task List for Scrum #1
+
+== Task List for Scrum #1 (02/05/13) ==
+  * Create C/C++ flag parser and start writing documentation (Karl)
+   * issue 5
+  * Create C/C++ file and stdio (Syler)
+   * issue 4
+  * Covert FORTRAN mathematical expressions to C/C++ (Matt)
+   * issue 6
+
+[TaskList Master Task List]

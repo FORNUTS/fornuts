@@ -1,0 +1,35 @@
+#summary Task list for scrum 3.
+
+= List =
+
+  * ~~Dynamic tab generation on simulations~~
+  * ~~Graph generation~~
+  * makefile for Linux
+  * ~~Uniform look and feel across platforms~~
+  * ~~Handle different resolutions gracefully~~
+  * Documentation
+  * ~~Clean core code~~
+  * Packages for distribution
+  * ~~csv file generation~~
+  * ~~File I/O in GUI~~
+
+
+= Split =
+
+Syler
+  * ~~File I/O in GUI~~
+  * ~~Example ini files~~
+  * ~~More GUI stuff~~
+  * ~~Testing inputs~~
+  * ~~GUI experimentation~~
+
+Matt
+  * ~~Graph generation~~
+  * Documentation
+  * Mac package
+
+Karl
+  * ~~Clean core code~~
+  * linux makefile
+  * 
+  * ~~Dynamic tab generation~~

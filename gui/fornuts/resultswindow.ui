@@ -1,0 +1,4069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultsWindow</class>
+ <widget class="QDialog" name="ResultsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>670</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>670</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>FORNUTS Results</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/images/fornuts.jpg</normaloff>:/images/images/fornuts.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+font-size: 11px;
+qproperty-alignment:AlignRight;
+}
+
+QGroupBox {
+font-size: 11px;
+}
+
+QLabel {
+font-size: 11px;
+}
+
+QRadioButton {
+font-size: 11px;
+}
+
+QDoubleSpinBox {
+font-size: 11px;
+}
+
+QSpinBox {
+font-size: 11px;
+}
+
+QTabWidget {
+font-size: 11px;
+}
+
+QCheckBox {
+font-size: 11px;
+}
+
+QPushButton {
+font-size: 11px;
+}</string>
+  </property>
+  <widget class="QTabWidget" name="Results">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="rotation1">
+    <attribute name="title">
+     <string>Rotation 1</string>
+    </attribute>
+    <widget class="QGroupBox" name="rotation1Box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget of Site and Biomass Yields By Rotation</string>
+     </property>
+     <widget class="QLabel" name="RotationNumber_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>72</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation Number</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_84">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_85">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_86">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNR">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>21</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNR">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>63</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="NETDNR">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_87">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_88">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_89">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>67</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_90">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>23</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_91">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>45</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_92">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>65</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_93">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>87</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_94">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>107</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMCR">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREML">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>63</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMB">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>84</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMOV">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>105</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMS">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>21</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NPBHAR">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>43</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NSBHAR">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>20</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNR">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>65</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_103">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InitialAgeOfStand">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>49</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Age of Stand</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_96">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>231</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIMTIM">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>26</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_95">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>212</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_20">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>171</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_98">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_99">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_100">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_101">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_102">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>106</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HCRMAS">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>41</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HSBMAS">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HLBMAS">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>62</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HBBMAS">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>83</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HTREM">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>104</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SimulationYear">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simulation Year</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_97">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>251</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBR">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BEGIN">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>47</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ROTATNNUM">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rotation2">
+    <attribute name="title">
+     <string>Rotation 2</string>
+    </attribute>
+    <widget class="QGroupBox" name="rotation2Box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget of Site and Biomass Yields By Rotation</string>
+     </property>
+     <widget class="QLabel" name="RotationNumber_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>72</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation Number</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_104">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_105">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_106">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNR_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>21</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNR_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>63</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="NETDNR_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_22">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_107">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_108">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_109">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>67</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_23">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_110">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>23</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_111">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>45</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_112">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>65</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_113">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>87</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_114">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>107</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMCR_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREML_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>63</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMB_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>84</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMOV_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>105</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMS_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>21</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NPBHAR_2">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>43</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NSBHAR_2">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>20</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNR_2">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>65</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_115">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InitialAgeOfStand_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>49</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Age of Stand</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_116">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>231</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIMTIM_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>26</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_117">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>212</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_24">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>171</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_118">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_119">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_120">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_121">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_122">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>106</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HCRMAS_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>41</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HSBMAS_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HLBMAS_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>62</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HBBMAS_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>83</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HTREM_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>104</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SimulationYear_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simulation Year</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_123">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>251</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBR_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BEGIN_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>47</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ROTATNNUM_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rotation3">
+    <attribute name="title">
+     <string>Rotation 3</string>
+    </attribute>
+    <widget class="QGroupBox" name="rotation3Box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget of Site and Biomass Yields By Rotation</string>
+     </property>
+     <widget class="QLabel" name="RotationNumber_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>72</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation Number</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_124">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_125">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_126">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNR_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>21</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNR_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>63</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="NETDNR_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_31">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_147">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_148">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_149">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>67</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_32">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_150">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>23</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_151">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>45</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_152">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>65</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_153">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>87</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_154">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>107</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMCR_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREML_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>63</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMB_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>84</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMOV_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>105</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMS_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>21</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NPBHAR_3">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>43</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NSBHAR_3">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>20</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNR_3">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>65</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_155">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InitialAgeOfStand_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>49</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Age of Stand</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_156">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>231</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIMTIM_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>26</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_157">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>212</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_33">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>171</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_158">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_159">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_160">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_161">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_162">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>106</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HCRMAS_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>41</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HSBMAS_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HLBMAS_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>62</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HBBMAS_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>83</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HTREM_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>104</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SimulationYear_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simulation Year</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_163">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>251</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBR_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BEGIN_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>47</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ROTATNNUM_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rotation4">
+    <attribute name="title">
+     <string>Rotation 4</string>
+    </attribute>
+    <widget class="QGroupBox" name="rotation4Box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget of Site and Biomass Yields By Rotation</string>
+     </property>
+     <widget class="QLabel" name="RotationNumber_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>72</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation Number</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_38">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_184">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_185">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_186">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNR_5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>21</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNR_5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR_5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>63</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="NETDNR_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_39">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_187">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_188">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_189">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>67</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_40">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_190">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>23</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_191">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>45</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_192">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>65</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_193">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>87</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_194">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>107</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMCR_5">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREML_5">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>63</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMB_5">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>84</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMOV_5">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>105</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMS_5">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>21</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NPBHAR_5">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>43</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NSBHAR_5">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>20</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNR_5">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>65</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_195">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InitialAgeOfStand_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>49</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Age of Stand</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_196">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>231</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIMTIM_5">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>26</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_197">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>212</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_41">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>171</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_198">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_199">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_200">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_201">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_202">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>106</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HCRMAS_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>41</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HSBMAS_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HLBMAS_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>62</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HBBMAS_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>83</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HTREM_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>104</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SimulationYear_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simulation Year</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_203">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>251</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBR_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BEGIN_5">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>47</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ROTATNNUM_5">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rotation5">
+    <attribute name="title">
+     <string>Rotation 5</string>
+    </attribute>
+    <widget class="QGroupBox" name="rotation5Box">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget of Site and Biomass Yields By Rotation</string>
+     </property>
+     <widget class="QLabel" name="RotationNumber_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>72</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation Number</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_42">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_204">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_205">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_206">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNR_6">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>21</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNR_6">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR_6">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>63</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="NETDNR_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>210</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_43">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_207">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_208">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_209">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>67</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_44">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_210">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>23</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_211">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>45</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_212">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>65</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_213">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>87</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_214">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>107</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMCR_6">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREML_6">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>63</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMB_6">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>84</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMOV_6">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>105</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMS_6">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>21</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NPBHAR_6">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>43</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NSBHAR_6">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>20</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNR_6">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>65</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_215">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InitialAgeOfStand_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>49</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Initial Age of Stand</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_216">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>231</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIMTIM_6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>26</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_217">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>212</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_45">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>171</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_218">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_219">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>43</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_220">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_221">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_222">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>106</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HCRMAS_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>41</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HSBMAS_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HLBMAS_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>62</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HBBMAS_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>83</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="HTREM_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>104</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SimulationYear_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>28</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simulation Year</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_223">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>251</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBR_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BEGIN_6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>47</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ROTATNNUM_6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="results_1">
+    <attribute name="title">
+     <string>Results</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>621</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Summary of Nitrogen Budget and Biomass Yeilds for Entire Simulation</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>191</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inputs of Nitrogen to Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_127">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fertilization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_128">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precipitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_129">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>68</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FERTNS">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAINNS">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ENTRNR_RESULTS">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_28">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>371</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs of Nitrogen From Site (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_130">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Slash Burning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_131">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>50</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prescribed Bruning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_132">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>70</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Leaching</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_29">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>171</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Losses From Biomass Removals</string>
+       </property>
+       <widget class="QLabel" name="label_133">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stems</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_134">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coarse Roots</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_135">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>41</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Foliage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_136">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Branches</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_137">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMSS">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NRMSCR">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>40</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMSL">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>60</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMSB">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NREMSI">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>100</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLineEdit" name="NSBURN">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NPBURN">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="OUTNS">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>70</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_138">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>200</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Net Change in Total Nitrogen of Site (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_139">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Soil Nitrogen Pool at End of Rotation (KG/HA)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_140">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Carbon:Nitrogen Ratio at End of Rotation</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_30">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>191</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Biomass Yeilds (KG/HA)</string>
+      </property>
+      <widget class="QLabel" name="label_141">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>31</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stems</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_142">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coarse Roots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_143">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>71</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Foliage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_144">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>91</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Branches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_145">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TSREM">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TCRREM">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TLREM">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>70</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TBREM">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TREM">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>110</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_146">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>260</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Biomass Yield per Unit of Nitrogen Removed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NETDNS">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>200</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SOILN_RESULTS">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>220</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CNRATO_RESULTS">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>240</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NRUBS">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>260</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="nPoolGraph">
+    <attribute name="title">
+     <string>Nitrogen Pool Graph</string>
+    </attribute>
+    <widget class="QCustomPlot" name="nPoolPlot" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>621</width>
+       <height>311</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="biomassGraph">
+    <attribute name="title">
+     <string>Biomass Graph</string>
+    </attribute>
+    <widget class="QCustomPlot" name="biomassPlot" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>621</width>
+       <height>311</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

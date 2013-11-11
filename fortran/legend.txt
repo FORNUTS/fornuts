@@ -1,0 +1,30 @@
+
+Initial age (0-50 y)
+Site Index (45, 55, 65, or 75)
+Rotation length (25-75 y)
+Number of rotations (1-5)
+Age at fertilization (0 = no fert)
+Fertilize rate (0, 100, 200, 300 kg/ha)
+Age at prescribed burn (0 = no burn; otherwise > 10 y)
+Frequency of prescribed burn (0 = no burn, otherwise 4-20)
+Temperature of prescribed burn (0 = none, 1 = warm, 2 = hot)
+Harvest method (1 = whole tree, 2 = stem only)
+Broadcast burn after harvest (0 = no, 1 = yes)
+Temperature of broadcast burn (0 = no, 1 = warm, 2 = hot)
+% N reabsorbed from foliage, including decimal (0.0-40.0)
+% N reabsorbed from fine roots, including decimal (0.0-40.0)
+Root/shoot ratio, as %, including decimal (50.0-200.0)
+Total soil carbon pool (kg/ha) (15000-35000)
+Total soil nitrogen pool (kg/ha) (1500-5000)
+%N in leaves, including decimal (0.8-2.0)
+%N in fine roots, including decimal (0.5-1.2)
+annual N input (kg/ha/y) (5-20)
+annual N output (kg/ha/y) (1-5)
+<return to continue>
+<return to continue>
+<return to continue>
+Change any? (0 = no, 1 = yes)
+<return to generate output>
+<return to continue>
+<return to continue>
+<return to continue>

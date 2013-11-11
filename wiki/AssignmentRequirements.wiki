@@ -1,0 +1,100 @@
+#summary Assignment Requirements Given for our CS 472 class
+#labels AssignmentRequirments
+= Assignment Requirements =
+  * Assignment Requirements as shown at http://www.cs.uaf.edu/2013/spring/cs472/assignments.html
+= Pre-Scrum Analysis =
+  * How will you communicate with the client? all of you / single point-of-contact / subset, e-mail / phone / in-person, any periods of inaccessiblity / spring break
+   * E-mail with the client or through Matt.
+
+  * Do you have a regular meeting schedule? strongly suggest you have at least 1 hour per week devoted to a group meeting about the project
+   * Tuesdays or Thursdays after class.
+
+  * How is your group going to communicate? weekly meetings / meet as needed / e-mail / sourceforge / wiki / google doc
+   * Weekly meetings, e-mail and through this site.
+
+  * How are you going to record/preserve those communications?
+   * Through a wiki page MeetingNotes.
+
+  * How are you going to work? always as a group / sub-groups / team programming / independently except for scheduled meetings
+   * Independently except for scheduled meetings.
+
+  * What Version Control System are you going to use for the code? likely Git or Subversion
+   * Using Subversion with this site as a host.
+
+  * How will you document the tasks that you have developed from the user stores?
+   * Through a wiki page TaskList
+
+  * Where will the current scrum list (those tasks selected to be completed during this scrum) be located?
+   * Through a wiki page TaskList
+
+  * How will you document changes to the task and the current scrum list during a scrum?
+   * Through a wiki page TaskList
+
+  * How are you going to write the SWR and DD during the semester? likely Word or Google Doc - I need the current version at each technical review with the ability to view changes since the previous version
+   * Design Document
+   * Software Requirements Document
+   * User Manual
+
+  * What documentation for the client will be required? How are you going to create that? user's manual / in app help / FAQs / administrator's manual / developer's manual (how to add functionality) / etc which will differ based on each project
+   * Users Manual, and any other documentation required from the client
+
+  * What is your task list for Scrum #1?
+   * See wiki page TaskList
+
+= Scrum Technical Review =
+  * Provide the status for each scheduled task in your scrum sprint list. finished / not finished (what is left to do) / no longer needed, how close was your time estimate?
+
+  * Discuss changes to your master task list based on knowledge gained during this scrum sprint.
+
+  * Discuss any changes to your project management decisions and provide the rationale. i.e. the things you defined during the pre-scrum analysis
+
+  * Provide a current copy of the SWR, DD and any other documentation you will produce. be prepared to answer questions about them
+
+  * Demonstrate any working code and describe any problems or functionality that still needs to be added.
+
+  * What is your task list for the next Scrum Sprint? be prepared to explain why this is suitable subset of the master task list and why you think it is possible to finish them during the next Scrum Sprint
+
+= Status Presentations =
+  * Start with a quick overview of your project. assume that the audience is technical and has some knowledge of your project
+
+  * Use an architectural diagram to explain your implementation. be clear what parts you are implementing vs. using from an existing system
+
+  * What have you accomplished since the last presentation?
+
+  * Are there any scheduled task(s) that you didn't finish? Explain why.
+
+  * Are there any new user stories or modifications to previous user stories?
+
+  * Are there any unexpected challenges that you have discovered?
+
+  * Are there any changes to your project management decisions?
+
+  * What changes to the requirements, design or implementation did you discover?
+
+  * Have any new design or implementation decisions been made? What is the rationale for each one?
+
+  * Any problems or issues since the last presentation? How were they resolved?
+
+  * How has the communication with the client been?
+
+  * Do a live demo of any working parts.
+
+= Final Presentation =
+
+  * Start with a detailed overview of your project. assume that some in your audience are not technical and it may be the first time they have seen the project
+
+  * Use an architectural diagram to explain your implementation. be clear what parts you implemented vs. used from an existing system
+
+  * Quickly go through each scrum list and note what was completed on time and what wasn't. You don't have to read everything. Focus on the tasks that exposed a need for a change to the requirements, design and/or implementation (i.e. the reason you used an agile method.)
+
+  * Is there any functionality that you didn't deliver? Explain why and what (if anything) can be done to address this.
+
+  * What unexpected challenges did you encounter during the project?
+
+  * Do a live demo of your project.
+
+= Software Requirements Document (SWR) =
+
+= Design Document (DD) =
+
+= Software Process Documents =

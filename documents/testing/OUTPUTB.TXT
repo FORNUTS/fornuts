@@ -1,0 +1,1147 @@
+                                                                        
+                                                                        
+  FFFFFFFF  OOOOOOOO  RRRRRR    NNN   NN  UUU  UUU  TTTTTTTT  SSSSSSSS  
+  FFFFFFFF  OOOOOOOO  RRRRRRRR  NNN   NN  UUU  UUU  TTTTTTTT  SSSSSSSS  
+  FFF       OOO  OOO  RRR  RRR  NNNN  NN  UUU  UUU     TT     SSS  SSS  
+  FFF       OOO  OOO  RRR  RRR  NNNN  NN  UUU  UUU     TT     SSS       
+  FFFFFF    OOO  OOO  RRRRRRRR  NNNNN NN  UUU  UUU     TT     SSS       
+  FFFFFF    OOO  OOO  RRRRRR    NNNNNNNN  UUU  UUU     TT     SSSSSSSS  
+  FFF       OOO  OOO  RRRRRRR   NN NNNNN  UUU  UUU     TT     SSSSSSSS  
+  FFF       OOO  OOO  RRR RRRR  NN  NNNN  UUU  UUU     TT          SSS  
+  FFF       OOO  OOO  RRR  RRR  NN  NNNN  UUU  UUU     TT     SSS  SSS  
+  FFF       OOOOOOOO  RRR   RR  NN   NNN  UUUUUUUU     TT     SSSSSSSS  
+  FFF       OOOOOOOO  RRR   RR  NN   NNN  UUUUUUUU     TT     SSSSSSSS  
+                                                                        
+
+a FORest NUTrient cycling Simulator
+  ---    ---              -
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+Pause.
+Please press <return> to continue.
+
+
+
+ENTER THE INITIAL STAND AGE IN YEARS --->
+1
+
+
+
+ENTER THE SITE INDEX WITH A BASE AGE OF 25
+(CHOICES ARE: 45, 55, 65, AND 75) --->
+75
+
+
+
+ENTER THE DESIRED ROTATION LENGTH IN YEARS --->
+50
+
+
+
+ENTER THE NUMBER OF ROTATIONS (MAX OF 5) THAT YOU
+WOULD LIKE TO SIMULATE --->
+5
+
+
+
+ENTER THE STAND AGE AT WHICH YOU WANT TO
+FERTILIZE. IF YOU DO NOT WANT TO FERTILIZE, ENTER 0 --->
+15
+
+
+
+ENTER THE FERTILIZER RATE: 100,200,OR 300 KG/HA.
+IF YOU ARE NOT GOING TO FERTILIZE, ENTER 0 --->
+200
+
+
+
+ENTER THE AGE WHEN YOU FIRST WANT TO PRESCRIBE BURN.
+IF YOU DO NOT WANT TO PRESCRIBE BURN, ENTER 0 --->
+15
+
+
+
+ENTER THE FREQUENCY AT WHICH YOU WANT TO PRESCRIBE
+BURN. IF YOU DO NOT WANT TO PRESCRIBE BURN ENTER 0 --->
+5
+
+
+
+HOW HOT WILL YOUR PRESCRIBED BURN BE? ENTER 2 FOR
+HOT, 1 FOR WARM. IF YOU ARE NOT GOING TO PRESCRIBE BURN,
+ENTER 0 --->
+1
+
+
+
+TYPE OF HARVEST METHOD. ENTER 1 FOR WHOLE TREE,
+2 FOR STEM ONLY --->
+2
+
+
+
+DO YOU WANT TO BROADCAST BURN THE SLASH AFTER
+HARVEST? ENTER 1 FOR YES, 0 FOR NO --->
+1
+
+
+
+HOW HOT WILL YOUR BROADCAST BURN BE? ENTER 2 FOR
+HOT, 1 FOR WARM. IF NOT GOING TO BROADCAST BURN,
+ENTER 0 --->
+1
+
+
+
+ENTER THE PERCENT OF NITROGEN REABSORBED FROM THE
+LEAVES PRIOR TO ABSCISSION. YOU MUST INCLUDE A DECIMAL POINT  --->
+.5
+
+
+
+ENTER THE PERCENT OF NITROGEN REABSORBED FROM THE
+FINE ROOTS PRIOR TO SENESCENCE. YOU MUST INCLUDE A DECIMAL POINT  --->
+.5
+
+
+
+ENTER THE WEIGHT RATIO OF FINE ROOTS TO FOLIAGE,
+EXPRESSED AS A PERCENTAGE. YOU MUST INCLUDE A DECIMAL POINT  --->
+100.0
+
+
+
+ENTER THE TOTAL SOIL CARBON POOL IN KG/HA --->
+30000
+
+
+
+INITIALIZE THE TOTAL NITROGEN POOL IN KG/HA --->
+2000
+
+
+
+ENTER THE PERCENT WEIGHT CONTENT OF NITROGEN
+IN LEAVES. YOU MUST INCLUDE A DECIMAL POINT  --->
+1.2
+
+
+
+ENTER THE PERCENT WEIGHT CONTENT OF NITROGEN
+IN FINE ROOTS. YOU MUST INCLUDE A DECIMAL POINT  --->
+1.0
+
+
+
+ENTER THE ANNUAL INPUT OF NITROGEN FROM ATMOSPHERIC 
+SOURCES AND FROM BIOLOGICAL N FIXATION (KG/HA) --->
+3
+
+
+
+ENTER THE ANNUAL OUTPUT OF NITROGEN FROM LEACHING
+BEYOND THE ROOTING ZONE (KG/HA) --->
+1
+
+
+LOOK OVER THE NEXT TWO SCREENS OF INPUT VALUES
+TO MAKE SURE THEY ARE WHAT YOU INTENDED.
+
+Pause.
+Please press <return> to continue.
+
+ 
+USER-CONTROLLED SIMULATION PARAMETERS
+-------------------------------------
+
+SIMULATION PERIOD:  249 YEARS
+
+NUMBER OF ROTATIONS TO BE SIMULATED:  5
+
+INITIAL STAND AGE:    1 YEARS
+
+ROTATION LENGTH:     50 YEARS
+
+SITE INDEX:   75
+
+SOIL CARBON POOL:      30000. KG/HA
+
+INITIAL SOIL NITROGEN POOL:     2000. KG/HA
+
+PERCENT N IN FOLIAGE:    1.20 %
+
+PERCENT N IN FINE ROOTS: 1.00 %
+
+PERCENT N REABSORBED
+PRIOR TO LEAF ABSCISSION:             .50 %
+
+PERCENT N REABSORBED
+PRIOR TO SENESCENCE OF FINE ROOTS:    .50 %
+Pause.
+Please press <return> to continue.
+
+PERCENT OF FINE ROOTS TO FOLIAGE:  100.00 %
+
+ANNUAL N INPUT:    3. KG/HA
+
+ANNUAL N OUTPUT:   1. KG/HA
+
+N FERTILIZATION?  YES
+
+N FERTILIZATION RATE:  200 KG/HA
+
+STAND AGE WHEN FERTILIZED: 15 YEARS
+
+PRESCRIBED BURNING?  YES
+
+INITIAL STAND AGE WHEN
+FIRST PRESCRIBE BURN: 15 YEARS
+
+FREQUENCY OF PRESCRIBED BURNS: EVERY  5 YEARS
+
+RELATIVE TEMPERATURE OF PRESCRIBED BURNS: WARM
+
+SLASH BURNING?  YES
+
+RELATIVE TEMPERATURE OF SLASH BURNS:  WARM
+
+HARVEST METHOD:  STEM ONLY
+Pause.
+Please press <return> to continue.
+
+
+
+AFTER LOOKING OVER THE INPUTS, DO YOU WANT
+TO RE-ENTER THE INPUT VALUES? IF YES, ENTER 1,
+IF NO, ENTER 0 --->
+0
+
+                         calculating year   1 now
+
+                         calculating year   2 now
+
+                         calculating year   3 now
+
+                         calculating year   4 now
+
+                         calculating year   5 now
+
+                         calculating year   6 now
+
+                         calculating year   7 now
+
+                         calculating year   8 now
+
+                         calculating year   9 now
+
+                         calculating year  10 now
+
+                         calculating year  11 now
+
+                         calculating year  12 now
+
+                         calculating year  13 now
+
+                         calculating year  14 now
+
+                         calculating year  15 now
+
+                         calculating year  16 now
+
+                         calculating year  17 now
+
+                         calculating year  18 now
+
+                         calculating year  19 now
+
+                         calculating year  20 now
+
+                         calculating year  21 now
+
+                         calculating year  22 now
+
+                         calculating year  23 now
+
+                         calculating year  24 now
+
+                         calculating year  25 now
+
+                         calculating year  26 now
+
+                         calculating year  27 now
+
+                         calculating year  28 now
+
+                         calculating year  29 now
+
+                         calculating year  30 now
+
+                         calculating year  31 now
+
+                         calculating year  32 now
+
+                         calculating year  33 now
+
+                         calculating year  34 now
+
+                         calculating year  35 now
+
+                         calculating year  36 now
+
+                         calculating year  37 now
+
+                         calculating year  38 now
+
+                         calculating year  39 now
+
+                         calculating year  40 now
+
+                         calculating year  41 now
+
+                         calculating year  42 now
+
+                         calculating year  43 now
+
+                         calculating year  44 now
+
+                         calculating year  45 now
+
+                         calculating year  46 now
+
+                         calculating year  47 now
+
+                         calculating year  48 now
+
+                         calculating year  49 now
+
+                         calculating year  50 now
+
+                         calculating year  51 now
+
+                         calculating year  52 now
+
+                         calculating year  53 now
+
+                         calculating year  54 now
+
+                         calculating year  55 now
+
+                         calculating year  56 now
+
+                         calculating year  57 now
+
+                         calculating year  58 now
+
+                         calculating year  59 now
+
+                         calculating year  60 now
+
+                         calculating year  61 now
+
+                         calculating year  62 now
+
+                         calculating year  63 now
+
+                         calculating year  64 now
+
+                         calculating year  65 now
+
+                         calculating year  66 now
+
+                         calculating year  67 now
+
+                         calculating year  68 now
+
+                         calculating year  69 now
+
+                         calculating year  70 now
+
+                         calculating year  71 now
+
+                         calculating year  72 now
+
+                         calculating year  73 now
+
+                         calculating year  74 now
+
+                         calculating year  75 now
+
+                         calculating year  76 now
+
+                         calculating year  77 now
+
+                         calculating year  78 now
+
+                         calculating year  79 now
+
+                         calculating year  80 now
+
+                         calculating year  81 now
+
+                         calculating year  82 now
+
+                         calculating year  83 now
+
+                         calculating year  84 now
+
+                         calculating year  85 now
+
+                         calculating year  86 now
+
+                         calculating year  87 now
+
+                         calculating year  88 now
+
+                         calculating year  89 now
+
+                         calculating year  90 now
+
+                         calculating year  91 now
+
+                         calculating year  92 now
+
+                         calculating year  93 now
+
+                         calculating year  94 now
+
+                         calculating year  95 now
+
+                         calculating year  96 now
+
+                         calculating year  97 now
+
+                         calculating year  98 now
+
+                         calculating year  99 now
+
+                         calculating year 100 now
+
+                         calculating year 101 now
+
+                         calculating year 102 now
+
+                         calculating year 103 now
+
+                         calculating year 104 now
+
+                         calculating year 105 now
+
+                         calculating year 106 now
+
+                         calculating year 107 now
+
+                         calculating year 108 now
+
+                         calculating year 109 now
+
+                         calculating year 110 now
+
+                         calculating year 111 now
+
+                         calculating year 112 now
+
+                         calculating year 113 now
+
+                         calculating year 114 now
+
+                         calculating year 115 now
+
+                         calculating year 116 now
+
+                         calculating year 117 now
+
+                         calculating year 118 now
+
+                         calculating year 119 now
+
+                         calculating year 120 now
+
+                         calculating year 121 now
+
+                         calculating year 122 now
+
+                         calculating year 123 now
+
+                         calculating year 124 now
+
+                         calculating year 125 now
+
+                         calculating year 126 now
+
+                         calculating year 127 now
+
+                         calculating year 128 now
+
+                         calculating year 129 now
+
+                         calculating year 130 now
+
+                         calculating year 131 now
+
+                         calculating year 132 now
+
+                         calculating year 133 now
+
+                         calculating year 134 now
+
+                         calculating year 135 now
+
+                         calculating year 136 now
+
+                         calculating year 137 now
+
+                         calculating year 138 now
+
+                         calculating year 139 now
+
+                         calculating year 140 now
+
+                         calculating year 141 now
+
+                         calculating year 142 now
+
+                         calculating year 143 now
+
+                         calculating year 144 now
+
+                         calculating year 145 now
+
+                         calculating year 146 now
+
+                         calculating year 147 now
+
+                         calculating year 148 now
+
+                         calculating year 149 now
+
+                         calculating year 150 now
+
+                         calculating year 151 now
+
+                         calculating year 152 now
+
+                         calculating year 153 now
+
+                         calculating year 154 now
+
+                         calculating year 155 now
+
+                         calculating year 156 now
+
+                         calculating year 157 now
+
+                         calculating year 158 now
+
+                         calculating year 159 now
+
+                         calculating year 160 now
+
+                         calculating year 161 now
+
+                         calculating year 162 now
+
+                         calculating year 163 now
+
+                         calculating year 164 now
+
+                         calculating year 165 now
+
+                         calculating year 166 now
+
+                         calculating year 167 now
+
+                         calculating year 168 now
+
+                         calculating year 169 now
+
+                         calculating year 170 now
+
+                         calculating year 171 now
+
+                         calculating year 172 now
+
+                         calculating year 173 now
+
+                         calculating year 174 now
+
+                         calculating year 175 now
+
+                         calculating year 176 now
+
+                         calculating year 177 now
+
+                         calculating year 178 now
+
+                         calculating year 179 now
+
+                         calculating year 180 now
+
+                         calculating year 181 now
+
+                         calculating year 182 now
+
+                         calculating year 183 now
+
+                         calculating year 184 now
+
+                         calculating year 185 now
+
+                         calculating year 186 now
+
+                         calculating year 187 now
+
+                         calculating year 188 now
+
+                         calculating year 189 now
+
+                         calculating year 190 now
+
+                         calculating year 191 now
+
+                         calculating year 192 now
+
+                         calculating year 193 now
+
+                         calculating year 194 now
+
+                         calculating year 195 now
+
+                         calculating year 196 now
+
+                         calculating year 197 now
+
+                         calculating year 198 now
+
+                         calculating year 199 now
+
+                         calculating year 200 now
+
+                         calculating year 201 now
+
+                         calculating year 202 now
+
+                         calculating year 203 now
+
+                         calculating year 204 now
+
+                         calculating year 205 now
+
+                         calculating year 206 now
+
+                         calculating year 207 now
+
+                         calculating year 208 now
+
+                         calculating year 209 now
+
+                         calculating year 210 now
+
+                         calculating year 211 now
+
+                         calculating year 212 now
+
+                         calculating year 213 now
+
+                         calculating year 214 now
+
+                         calculating year 215 now
+
+                         calculating year 216 now
+
+                         calculating year 217 now
+
+                         calculating year 218 now
+
+                         calculating year 219 now
+
+                         calculating year 220 now
+
+                         calculating year 221 now
+
+                         calculating year 222 now
+
+                         calculating year 223 now
+
+                         calculating year 224 now
+
+                         calculating year 225 now
+
+                         calculating year 226 now
+
+                         calculating year 227 now
+
+                         calculating year 228 now
+
+                         calculating year 229 now
+
+                         calculating year 230 now
+
+                         calculating year 231 now
+
+                         calculating year 232 now
+
+                         calculating year 233 now
+
+                         calculating year 234 now
+
+                         calculating year 235 now
+
+                         calculating year 236 now
+
+                         calculating year 237 now
+
+                         calculating year 238 now
+
+                         calculating year 239 now
+
+                         calculating year 240 now
+
+                         calculating year 241 now
+
+                         calculating year 242 now
+
+                         calculating year 243 now
+
+                         calculating year 244 now
+
+                         calculating year 245 now
+
+                         calculating year 246 now
+
+                         calculating year 247 now
+
+                         calculating year 248 now
+
+                         calculating year 249 now
+
+                         calculating year 250 now
+
+IF YOU WANT A PRINTED COPY OF INPUTS AND RESULTS,
+PRESS CONTROL-P AT THIS TIME TO START PRINTER ECHO.
+OTHERWISE YOU WILL NEED TO STOP THE SCROLLING AT SEVERAL POINTS
+TO PREVENT RESULTS FROM DISAPPEARING OFF THE TOP OF YOUR
+SCREEN.  THIS IS DONE BY PRESSING CONTROL-S.
+SCROLLING CAN BE RESTARTED BY HITTING THE SPACE BAR.
+
+Pause.
+Please press <return> to continue.
+
+ 
+USER-CONTROLLED SIMULATION PARAMETERS
+-------------------------------------
+
+SIMULATION PERIOD:  249 YEARS
+
+NUMBER OF ROTATIONS TO BE SIMULATED:  5
+
+INITIAL STAND AGE:    1 YEARS
+
+ROTATION LENGTH:     50 YEARS
+
+SITE INDEX:   75
+
+SOIL CARBON POOL:      30000. KG/HA
+
+INITIAL SOIL NITROGEN POOL:     2000. KG/HA
+
+PERCENT N IN FOLIAGE:    1.20 %
+
+PERCENT N IN FINE ROOTS: 1.00 %
+
+PERCENT N REABSORBED
+PRIOR TO LEAF ABSCISSION:             .50 %
+
+PERCENT N REABSORBED
+PRIOR TO SENESCENCE OF FINE ROOTS:    .50 %
+Pause.
+Please press <return> to continue.
+
+PERCENT OF FINE ROOTS TO FOLIAGE:  100.00 %
+
+ANNUAL N INPUT:    3. KG/HA
+
+ANNUAL N OUTPUT:   1. KG/HA
+
+N FERTILIZATION?  YES
+
+N FERTILIZATION RATE:  200 KG/HA
+
+STAND AGE WHEN FERTILIZED: 15 YEARS
+
+PRESCRIBED BURNING?  YES
+
+INITIAL STAND AGE WHEN
+FIRST PRESCRIBE BURN: 15 YEARS
+
+FREQUENCY OF PRESCRIBED BURNS: EVERY  5 YEARS
+
+RELATIVE TEMPERATURE OF PRESCRIBED BURNS: WARM
+
+SLASH BURNING?  YES
+
+RELATIVE TEMPERATURE OF SLASH BURNS:  WARM
+
+HARVEST METHOD:  STEM ONLY
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:    49
+
+INITIAL AGE OF
+STAND:               1
+
+ROTATION NUMBER:     1
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:         0.
+
+PRECIPITATION:      147.                  PRESCRIBED
+                                          BURNING:             200.
+
+                -------
+                                          LEACHING:             49.
+
+        TOTAL:      347.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:              9.69
+
+                                             COARSE ROOTS:        .00
+
+                                             FOLIAGE:             .00
+
+                                             BRANCHES:            .00
+
+                                                             --------
+
+                                                    TOTAL:       9.69
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   88.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2088.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:            9688.
+
+COARSE ROOTS:        0.
+
+FOLIAGE:             0.
+
+BRANCHES:            0.
+
+               --------
+       TOTAL:      9688.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:      1000.
+Pause.
+Please press <return> to continue.
+
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:    99
+
+INITIAL AGE OF
+STAND:               0
+
+ROTATION NUMBER:     2
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:        75.
+
+PRECIPITATION:      150.                  PRESCRIBED
+                                          BURNING:             200.
+
+                -------
+                                          LEACHING:             50.
+
+        TOTAL:      350.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:              9.96
+
+                                             COARSE ROOTS:        .00
+
+                                             FOLIAGE:             .00
+
+                                             BRANCHES:            .00
+
+                                                             --------
+
+                                                    TOTAL:       9.96
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   15.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2103.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:            9956.
+
+COARSE ROOTS:        0.
+
+FOLIAGE:             0.
+
+BRANCHES:            0.
+
+               --------
+       TOTAL:      9956.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:      1000.
+Pause.
+Please press <return> to continue.
+
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:   149
+
+INITIAL AGE OF
+STAND:               0
+
+ROTATION NUMBER:     3
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:        75.
+
+PRECIPITATION:      150.                  PRESCRIBED
+                                          BURNING:             200.
+
+                -------
+                                          LEACHING:             50.
+
+        TOTAL:      350.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:              9.96
+
+                                             COARSE ROOTS:        .00
+
+                                             FOLIAGE:             .00
+
+                                             BRANCHES:            .00
+
+                                                             --------
+
+                                                    TOTAL:       9.96
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   15.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2118.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:            9956.
+
+COARSE ROOTS:        0.
+
+FOLIAGE:             0.
+
+BRANCHES:            0.
+
+               --------
+       TOTAL:      9956.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:      1000.
+Pause.
+Please press <return> to continue.
+
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:   199
+
+INITIAL AGE OF
+STAND:               0
+
+ROTATION NUMBER:     4
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:        75.
+
+PRECIPITATION:      150.                  PRESCRIBED
+                                          BURNING:             200.
+
+                -------
+                                          LEACHING:             50.
+
+        TOTAL:      350.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:             11.07
+
+                                             COARSE ROOTS:        .00
+
+                                             FOLIAGE:             .00
+
+                                             BRANCHES:            .00
+
+                                                             --------
+
+                                                    TOTAL:      11.07
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   14.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2132.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:           11068.
+
+COARSE ROOTS:        0.
+
+FOLIAGE:             0.
+
+BRANCHES:            0.
+
+               --------
+       TOTAL:     11068.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:      1000.
+Pause.
+Please press <return> to continue.
+
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:   249
+
+INITIAL AGE OF
+STAND:               0
+
+ROTATION NUMBER:     5
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:        75.
+
+PRECIPITATION:      150.                  PRESCRIBED
+                                          BURNING:             200.
+
+                -------
+                                          LEACHING:             50.
+
+        TOTAL:      350.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:             11.07
+
+                                             COARSE ROOTS:        .00
+
+                                             FOLIAGE:             .00
+
+                                             BRANCHES:            .00
+
+                                                             --------
+
+                                                    TOTAL:      11.07
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   14.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2146.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:           11068.
+
+COARSE ROOTS:        0.
+
+FOLIAGE:             0.
+
+BRANCHES:            0.
+
+               --------
+       TOTAL:     11068.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:      1000.
+Pause.
+Please press <return> to continue.
+
+ 
+    SUMMARY OF NITROGEN BUDGET AND BIOMASS YIELDS FOR ENTIRE SIMULATION
+    -------------------------------------------------------------------
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NI  TROGEN FROM SITE (KG/HA)
+----------------------------------     --------------  -----------------------
+
+FERTILIZATION:      1000.                 SLASH BURNING:        300.
+
+PRECIPITATION:       747.                 PRESCRIBED
+                                          BURNING :             1000.
+
+                --------
+                                          LEACHING:             249.
+
+        TOTAL:      1747.                 LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:              51.73
+
+                                             COARSE ROOTS:         .00
+
+                                             FOLIAGE:              .00
+
+                                             BRANCHES:             .00
+
+                                                             ---------
+
+                                                    TOTAL:       51.73
+
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):           146.
+
+SOIL NITROGEN POOL AT END OF SIMULATION (KG/HA):       2085.
+
+CARBON:NITROGEN RATIO AT END OF SIMULATION:              14.
+
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:            51735.
+
+COARSE ROOTS:         0.
+
+FOLIAGE:              0.
+
+BRANCHES:             0.
+
+              ---------
+       TOTAL:     51735.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:         1000.
+ 
+
+
+IF PRINTER ECHO IS ON, TURN IT OFF NOW BY PRESSING
+CONTROL-P AGAIN

@@ -1,0 +1,547 @@
+                                                                        
+                                                                        
+  FFFFFFFF  OOOOOOOO  RRRRRR    NNN   NN  UUU  UUU  TTTTTTTT  SSSSSSSS  
+  FFFFFFFF  OOOOOOOO  RRRRRRRR  NNN   NN  UUU  UUU  TTTTTTTT  SSSSSSSS  
+  FFF       OOO  OOO  RRR  RRR  NNNN  NN  UUU  UUU     TT     SSS  SSS  
+  FFF       OOO  OOO  RRR  RRR  NNNN  NN  UUU  UUU     TT     SSS       
+  FFFFFF    OOO  OOO  RRRRRRRR  NNNNN NN  UUU  UUU     TT     SSS       
+  FFFFFF    OOO  OOO  RRRRRR    NNNNNNNN  UUU  UUU     TT     SSSSSSSS  
+  FFF       OOO  OOO  RRRRRRR   NN NNNNN  UUU  UUU     TT     SSSSSSSS  
+  FFF       OOO  OOO  RRR RRRR  NN  NNNN  UUU  UUU     TT          SSS  
+  FFF       OOO  OOO  RRR  RRR  NN  NNNN  UUU  UUU     TT     SSS  SSS  
+  FFF       OOOOOOOO  RRR   RR  NN   NNN  UUUUUUUU     TT     SSSSSSSS  
+  FFF       OOOOOOOO  RRR   RR  NN   NNN  UUUUUUUU     TT     SSSSSSSS  
+                                                                        
+
+a FORest NUTrient cycling Simulator
+  ---    ---              -
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+Pause.
+Please press <return> to continue.
+
+
+
+ENTER THE INITIAL STAND AGE IN YEARS --->
+1
+
+
+
+ENTER THE SITE INDEX WITH A BASE AGE OF 25
+(CHOICES ARE: 45, 55, 65, AND 75) --->
+75
+
+
+
+ENTER THE DESIRED ROTATION LENGTH IN YEARS --->
+20
+
+
+
+ENTER THE NUMBER OF ROTATIONS (MAX OF 5) THAT YOU
+WOULD LIKE TO SIMULATE --->
+2
+
+
+
+ENTER THE STAND AGE AT WHICH YOU WANT TO
+FERTILIZE. IF YOU DO NOT WANT TO FERTILIZE, ENTER 0 --->
+15
+
+
+
+ENTER THE FERTILIZER RATE: 100,200,OR 300 KG/HA.
+IF YOU ARE NOT GOING TO FERTILIZE, ENTER 0 --->
+200
+
+
+
+ENTER THE AGE WHEN YOU FIRST WANT TO PRESCRIBE BURN.
+IF YOU DO NOT WANT TO PRESCRIBE BURN, ENTER 0 --->
+15
+
+
+
+ENTER THE FREQUENCY AT WHICH YOU WANT TO PRESCRIBE
+BURN. IF YOU DO NOT WANT TO PRESCRIBE BURN ENTER 0 --->
+5
+
+
+
+HOW HOT WILL YOUR PRESCRIBED BURN BE? ENTER 2 FOR
+HOT, 1 FOR WARM. IF YOU ARE NOT GOING TO PRESCRIBE BURN,
+ENTER 0 --->
+1
+
+
+
+TYPE OF HARVEST METHOD. ENTER 1 FOR WHOLE TREE,
+2 FOR STEM ONLY --->
+1
+
+
+
+DO YOU WANT TO BROADCAST BURN THE SLASH AFTER
+HARVEST? ENTER 1 FOR YES, 0 FOR NO --->
+1
+
+
+
+HOW HOT WILL YOUR BROADCAST BURN BE? ENTER 2 FOR
+HOT, 1 FOR WARM. IF NOT GOING TO BROADCAST BURN,
+ENTER 0 --->
+1
+
+
+
+ENTER THE PERCENT OF NITROGEN REABSORBED FROM THE
+LEAVES PRIOR TO ABSCISSION. YOU MUST INCLUDE A DECIMAL POINT  --->
+.5
+
+
+
+ENTER THE PERCENT OF NITROGEN REABSORBED FROM THE
+FINE ROOTS PRIOR TO SENESCENCE. YOU MUST INCLUDE A DECIMAL POINT  --->
+.5
+
+
+
+ENTER THE WEIGHT RATIO OF FINE ROOTS TO FOLIAGE,
+EXPRESSED AS A PERCENTAGE. YOU MUST INCLUDE A DECIMAL POINT  --->
+100.0
+
+
+
+ENTER THE TOTAL SOIL CARBON POOL IN KG/HA --->
+30000
+
+
+
+INITIALIZE THE TOTAL NITROGEN POOL IN KG/HA --->
+2000
+
+
+
+ENTER THE PERCENT WEIGHT CONTENT OF NITROGEN
+IN LEAVES. YOU MUST INCLUDE A DECIMAL POINT  --->
+1.2
+
+
+
+ENTER THE PERCENT WEIGHT CONTENT OF NITROGEN
+IN FINE ROOTS. YOU MUST INCLUDE A DECIMAL POINT  --->
+1.0
+
+
+
+ENTER THE ANNUAL INPUT OF NITROGEN FROM ATMOSPHERIC 
+SOURCES AND FROM BIOLOGICAL N FIXATION (KG/HA) --->
+3
+
+
+
+ENTER THE ANNUAL OUTPUT OF NITROGEN FROM LEACHING
+BEYOND THE ROOTING ZONE (KG/HA) --->
+1
+
+
+LOOK OVER THE NEXT TWO SCREENS OF INPUT VALUES
+TO MAKE SURE THEY ARE WHAT YOU INTENDED.
+
+Pause.
+Please press <return> to continue.
+
+ 
+USER-CONTROLLED SIMULATION PARAMETERS
+-------------------------------------
+
+SIMULATION PERIOD:   39 YEARS
+
+NUMBER OF ROTATIONS TO BE SIMULATED:  2
+
+INITIAL STAND AGE:    1 YEARS
+
+ROTATION LENGTH:     20 YEARS
+
+SITE INDEX:   75
+
+SOIL CARBON POOL:      30000. KG/HA
+
+INITIAL SOIL NITROGEN POOL:     2000. KG/HA
+
+PERCENT N IN FOLIAGE:    1.20 %
+
+PERCENT N IN FINE ROOTS: 1.00 %
+
+PERCENT N REABSORBED
+PRIOR TO LEAF ABSCISSION:             .50 %
+
+PERCENT N REABSORBED
+PRIOR TO SENESCENCE OF FINE ROOTS:    .50 %
+Pause.
+Please press <return> to continue.
+
+PERCENT OF FINE ROOTS TO FOLIAGE:  100.00 %
+
+ANNUAL N INPUT:    3. KG/HA
+
+ANNUAL N OUTPUT:   1. KG/HA
+
+N FERTILIZATION?  YES
+
+N FERTILIZATION RATE:  200 KG/HA
+
+STAND AGE WHEN FERTILIZED: 15 YEARS
+
+PRESCRIBED BURNING?  YES
+
+INITIAL STAND AGE WHEN
+FIRST PRESCRIBE BURN: 15 YEARS
+
+FREQUENCY OF PRESCRIBED BURNS: EVERY  5 YEARS
+
+RELATIVE TEMPERATURE OF PRESCRIBED BURNS: WARM
+
+SLASH BURNING?  YES
+
+RELATIVE TEMPERATURE OF SLASH BURNS:  WARM
+
+HARVEST METHOD:  WHOLE TREE
+Pause.
+Please press <return> to continue.
+
+
+
+AFTER LOOKING OVER THE INPUTS, DO YOU WANT
+TO RE-ENTER THE INPUT VALUES? IF YES, ENTER 1,
+IF NO, ENTER 0 --->
+0
+
+                         calculating year   1 now
+
+                         calculating year   2 now
+
+                         calculating year   3 now
+
+                         calculating year   4 now
+
+                         calculating year   5 now
+
+                         calculating year   6 now
+
+                         calculating year   7 now
+
+                         calculating year   8 now
+
+                         calculating year   9 now
+
+                         calculating year  10 now
+
+                         calculating year  11 now
+
+                         calculating year  12 now
+
+                         calculating year  13 now
+
+                         calculating year  14 now
+
+                         calculating year  15 now
+
+                         calculating year  16 now
+
+                         calculating year  17 now
+
+                         calculating year  18 now
+
+                         calculating year  19 now
+
+                         calculating year  20 now
+
+                         calculating year  21 now
+
+                         calculating year  22 now
+
+                         calculating year  23 now
+
+                         calculating year  24 now
+
+                         calculating year  25 now
+
+                         calculating year  26 now
+
+                         calculating year  27 now
+
+                         calculating year  28 now
+
+                         calculating year  29 now
+
+                         calculating year  30 now
+
+                         calculating year  31 now
+
+                         calculating year  32 now
+
+                         calculating year  33 now
+
+                         calculating year  34 now
+
+                         calculating year  35 now
+
+                         calculating year  36 now
+
+                         calculating year  37 now
+
+                         calculating year  38 now
+
+                         calculating year  39 now
+
+                         calculating year  40 now
+
+IF YOU WANT A PRINTED COPY OF INPUTS AND RESULTS,
+PRESS CONTROL-P AT THIS TIME TO START PRINTER ECHO.
+OTHERWISE YOU WILL NEED TO STOP THE SCROLLING AT SEVERAL POINTS
+TO PREVENT RESULTS FROM DISAPPEARING OFF THE TOP OF YOUR
+SCREEN.  THIS IS DONE BY PRESSING CONTROL-S.
+SCROLLING CAN BE RESTARTED BY HITTING THE SPACE BAR.
+
+Pause.
+Please press <return> to continue.
+
+ 
+USER-CONTROLLED SIMULATION PARAMETERS
+-------------------------------------
+
+SIMULATION PERIOD:   39 YEARS
+
+NUMBER OF ROTATIONS TO BE SIMULATED:  2
+
+INITIAL STAND AGE:    1 YEARS
+
+ROTATION LENGTH:     20 YEARS
+
+SITE INDEX:   75
+
+SOIL CARBON POOL:      30000. KG/HA
+
+INITIAL SOIL NITROGEN POOL:     2000. KG/HA
+
+PERCENT N IN FOLIAGE:    1.20 %
+
+PERCENT N IN FINE ROOTS: 1.00 %
+
+PERCENT N REABSORBED
+PRIOR TO LEAF ABSCISSION:             .50 %
+
+PERCENT N REABSORBED
+PRIOR TO SENESCENCE OF FINE ROOTS:    .50 %
+Pause.
+Please press <return> to continue.
+
+PERCENT OF FINE ROOTS TO FOLIAGE:  100.00 %
+
+ANNUAL N INPUT:    3. KG/HA
+
+ANNUAL N OUTPUT:   1. KG/HA
+
+N FERTILIZATION?  YES
+
+N FERTILIZATION RATE:  200 KG/HA
+
+STAND AGE WHEN FERTILIZED: 15 YEARS
+
+PRESCRIBED BURNING?  YES
+
+INITIAL STAND AGE WHEN
+FIRST PRESCRIBE BURN: 15 YEARS
+
+FREQUENCY OF PRESCRIBED BURNS: EVERY  5 YEARS
+
+RELATIVE TEMPERATURE OF PRESCRIBED BURNS: WARM
+
+SLASH BURNING?  YES
+
+RELATIVE TEMPERATURE OF SLASH BURNS:  WARM
+
+HARVEST METHOD:  WHOLE TREE
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:    19
+
+INITIAL AGE OF
+STAND:               1
+
+ROTATION NUMBER:     1 
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:         0. 
+
+PRECIPITATION:       57.                  PRESCRIBED
+                                          BURNING:              80. 
+
+                -------
+                                          LEACHING:             19.
+
+        TOTAL:      257.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:             10.23
+
+                                             COARSE ROOTS:       2.05
+
+                                             FOLIAGE:           30.78
+
+                                             BRANCHES:           9.41
+
+                                                             --------
+
+                                                    TOTAL:      52.46
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                  106.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2106.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:           10227.
+
+COARSE ROOTS:     2045.
+
+FOLIAGE:          2565.
+
+BRANCHES:         2850.
+
+               --------
+       TOTAL:     17688.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:       337.
+Pause.
+Please press <return> to continue.
+
+      SUMMARY OF NITROGEN BUDGET OF SITE AND BIOMASS YIELDS BY ROTATION
+     -----------------------------------------------------------------
+
+SIMULATION YEAR:    39
+
+INITIAL AGE OF
+STAND:               0
+
+ROTATION NUMBER:     2
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NITROGEN FROM SITE (KG/HA)
+----------------------------------     -------------------------------------
+
+FERTILIZATION:      200.                  SLASH BURNING:        75.
+
+PRECIPITATION:       60.                  PRESCRIBED
+                                          BURNING:              80.
+
+                -------
+                                          LEACHING:             20.
+
+        TOTAL:      260.                  LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:             10.50
+
+                                             COARSE ROOTS:       2.10
+
+                                             FOLIAGE:           31.05
+
+                                             BRANCHES:           9.49
+
+                                                             --------
+
+                                                    TOTAL:      53.14
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):                   32.
+
+SOIL NITROGEN POOL AT END OF ROTATION (KG/HA):         2137.
+
+CARBON:NITROGEN RATIO AT END OF ROTATION:                           14.
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:           10503.
+
+COARSE ROOTS:     2101.
+
+FOLIAGE:          2588.
+
+BRANCHES:         2875.
+
+               --------
+       TOTAL:     18067.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:       340.
+Pause.
+Please press <return> to continue.
+
+ 
+    SUMMARY OF NITROGEN BUDGET AND BIOMASS YIELDS FOR ENTIRE SIMULATION
+    -------------------------------------------------------------------
+
+INPUTS OF NITROGEN TO SITE (KG/HA)     OUTPUTS OF NI  TROGEN FROM SITE (KG/HA)
+----------------------------------     --------------  -----------------------
+
+FERTILIZATION:       400.                 SLASH BURNING:         75.
+
+PRECIPITATION:       117.                 PRESCRIBED
+                                          BURNING :              160.
+
+                --------
+                                          LEACHING:              39.
+
+        TOTAL:       517.                 LOSSES FROM BIOMASS REMOVALS
+
+                                             STEMS:              20.73
+
+                                             COARSE ROOTS:        4.15
+
+                                             FOLIAGE:            61.83
+
+                                             BRANCHES:           18.89
+											 
+                                                             ---------
+
+                                                    TOTAL:      105.60
+
+
+NET CHANGE IN TOTAL NITROGEN OF SITE (KG/HA):           137.
+
+SOIL NITROGEN POOL AT END OF SIMULATION (KG/HA):       2076.
+
+CARBON:NITROGEN RATIO AT END OF SIMULATION:              14.
+
+
+BIOMASS YIELDS (KG/HA)
+----------------------
+
+STEMS:            20731.
+
+COARSE ROOTS:      4146.
+
+FOLIAGE:           5153.
+
+BRANCHES:          5725.
+
+              ---------
+       TOTAL:     35755.
+
+
+BIOMASS YIELD PER UNIT OF NITROGEN REMOVED:          339.
+ 
+
+
+IF PRINTER ECHO IS ON, TURN IT OFF NOW BY PRESSING
+CONTROL-P AGAIN

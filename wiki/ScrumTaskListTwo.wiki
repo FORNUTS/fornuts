@@ -1,0 +1,31 @@
+#summary task list for our 2nd scrum
+
+= Task list for scrum 2 (3/5/13) =
+  * ~~Fix bugs in translated FORTRAN code.~~
+    * ~~Flag parser sanity checks.~~
+    * ~~Bug fixes in the simulations.~~
+  * ~~Investigate cross platform GUI frameworks.~~
+    * We have chosen Qt framework.
+  * ~~Test translated code against other known good simulations.~~
+  * Makefile for Linux build.
+  * ~~Refactor out common code between GUI and cmdline.~~
+  * ~~Finalize file input.~~
+  * ~~Create GUI mock ups for client.~~
+  * Display output for each simulation year in a UI.
+  * issue 11
+
+  * Karl's Tasks:
+    * ~~Test code against other known good simulations.~~
+    * ~~Work on the Design Document~~
+    * makefile for linux build
+    * ~~refactor common code out~~
+    * issue 8
+  * Syler's Task:
+    * ~~Figure out how to get variables from the Qt xml file to the correct location.~~
+    * issue 9
+  * Matt's Task:
+    * ~~Upload GUI mock up to repository.~~
+    * ~~Figure out how to "run" the simulation.~~
+    * issue 10
+
+[TaskList Master Task List]

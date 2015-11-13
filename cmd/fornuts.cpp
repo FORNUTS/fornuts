@@ -644,7 +644,4 @@ void printCredits(vars & progVars)
 	*progVars.fp<<"Matt Van Veldhuizen"<<endl;
 	*progVars.fp<<"Syler Clayon"<<endl;
 	*progVars.fp<<endl;
-	*progVars.fp<<"Logo:"<<endl;
-	*progVars.fp<<"Azara Mohammadi"<<endl;
-	*progVars.fp<<endl;
 }

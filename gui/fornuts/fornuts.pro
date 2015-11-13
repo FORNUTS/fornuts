@@ -3,6 +3,8 @@
 # Project created by QtCreator 2013-03-20T12:25:57
 #
 #-------------------------------------------------
+CONFIG += static
+QMAKE_LFLAGS+=-static-libgcc
 
 QT       += core gui
 QT       += printsupport
@@ -15,8 +17,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-#    ../../cpp/dictionary.c \
-#    ../../cpp/iniparser.c \
     ../../core/iniparser.c \
     ../../core/forcore.cpp \
     ../../core/dictionary.c \
@@ -25,8 +25,6 @@ SOURCES += main.cpp\
     resultswindow.cpp
 
 HEADERS  += mainwindow.h \
-#    ../../cpp/dictionary.h \
-#    ../../cpp/iniparser.h \
     ../../core/iniparser.h \
     ../../core/dictionary.h \
     ../../core/forcore.h \
